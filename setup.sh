@@ -1,4 +1,3 @@
-#!/bin/bash
 #wget https://github.com/${GitUser}/
 GitUser="cakill26"
 # Color Validation
