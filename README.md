@@ -1,7 +1,7 @@
-# Script HANGTUAH V8-Websocket
- Welcome MAT KILAU😊
+# Script ENVYOUS26 V666-Websocket
+ Welcome to CUKIMAY😊
 
- <h2 align="center">AutoScript VPN By HANGTUAH <img src="https://img.shields.io/badge/Version-6.0-blue.svg"></h2>
+ <h2 align="center">AutoScript VPN By ENVYOUS26 <img src="https://img.shields.io/badge/Version-6.0-blue.svg"></h2>
 
 
 <h2 align="center"> Supported Linux Distribution</h2>
@@ -107,6 +107,6 @@ systemctl restart wg-quick@wg0
 *   V2ray
 
 <p align="center">
-  <a><img src="https://img.shields.io/badge/Copyright%20©-MATKILAU%20AutoScriptVPN%202022.%20All%20rights%20reserved...-blueviolet.svg" style="max-width:200%;">
+  <a><img src="https://img.shields.io/badge/Copyright%20©-ENVYOUS%20AutoScriptVPN%202022.%20All%20rights%20reserved...-blueviolet.svg" style="max-width:200%;">
     </p>
    </p>
