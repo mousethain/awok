@@ -1,5 +1,5 @@
 #wget https://github.com/${GitUser}/
-GitUser="cakill26"
+GitUser="mousethain"
 # Color Validation
 Lred='\e[1;91m'
 BGWHITE='\e[0;47;30m'
@@ -11,7 +11,7 @@ clear
 # Valid Script
 VALIDITY () {
     today=`date -d "0 days" +"%Y-%m-%d"`
-    Exp1=$(curl https://raw.githubusercontent.com/${GitUser}/allow1/main/ipvps.conf | grep $MYIP | awk '{print $4}')
+    Exp1=$(curl https://raw.githubusercontent.com/${GitUser}/izin/main/ipvps.conf | grep $MYIP | awk '{print $4}')
     if [[ $today < $Exp1 ]]; then
     echo -e "\e[32mYOUR SCRIPT ACTIVE..\e[0m"
     else
@@ -20,7 +20,7 @@ VALIDITY () {
     exit 0
 fi
 }
-IZIN=$(curl https://raw.githubusercontent.com/${GitUser}/allow1/main/ipvps.conf | awk '{print $5}' | grep $MYIP)
+IZIN=$(curl https://raw.githubusercontent.com/${GitUser}/izin/main/ipvps.conf | awk '{print $5}' | grep $MYIP)
 if [ $MYIP = $IZIN ]; then
 echo -e "\e[32mPermission Accepted...\e[0m"
 VALIDITY
@@ -189,8 +189,8 @@ echo -e "Path None Tls  : $patchnontls"
 echo -e "allowInsecure  : True/allow"
 echo -e "Support Yaml   : YES"
 echo -e "\e[$line═════════════════════════════════\e[m"
-echo -e "Pantang Larang $creditt Shop"
-echo -e "‼️Aktiviti Berikut Adalah Dilarang(ID akan di ban tanpa notis & tiada refund)"
+echo -e "MouseVpn"
+echo -e "‼️Aktivitas Berikut Adalah Dilarang(ID akan di ban tanpa notis & tidak ada refund)"
 echo -e "\e[31m❌ Torrent (p2p, streaming p2p)"
 echo -e "\e[31m❌ PS4"
 echo -e "\e[31m❌ Porn"
@@ -200,14 +200,6 @@ echo -e "\e[31m❌ Mining Bitcoins"
 echo -e "\e[31m❌ Abuse Usage"
 echo -e "\e[31m❌ Multi-Login ID"
 echo -e "\e[31m❌ Sharing Premium Config\e[m"
-echo -e "\e[$line═════════════════════════════════\e[m"
-echo -e "Link (Maxis)   : ${vmesslink1}"
-echo -e "\e[$line═════════════════════════════════\e[m"
-echo -e "Link (Celcom)  : ${vmesslink2}"
-echo -e "\e[$line═════════════════════════════════\e[m"
-echo -e "Link (Yes)     : ${vmesslink3}"
-echo -e "\e[$line═════════════════════════════════\e[m"
-echo -e "Link (Digi)    : ${vmesslink4}"
 echo -e "\e[$line═════════════════════════════════\e[m"
 echo -e "Created   :$harini"
 echo -e "Expired   :$exp"
