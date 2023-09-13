@@ -1,5 +1,5 @@
 #wget https://github.com/${GitUser}/
-GitUser="cakill26"
+GitUser="mousethain"
 #IZIN SCRIPT
 MYIP=$(curl -sS ipv4.icanhazip.com)
 echo -e "\e[32mloading...\e[0m"
@@ -7,7 +7,7 @@ clear
 # Valid Script
 VALIDITY () {
     today=`date -d "0 days" +"%Y-%m-%d"`
-    Exp1=$(curl https://raw.githubusercontent.com/${GitUser}/allow1/main/ipvps.conf | grep $MYIP | awk '{print $4}')
+    Exp1=$(curl https://raw.githubusercontent.com/${GitUser}/izin/main/ipvps.conf | grep $MYIP | awk '{print $4}')
     if [[ $today < $Exp1 ]]; then
     echo -e "\e[32mYOUR SCRIPT ACTIVE..\e[0m"
     else
@@ -16,7 +16,7 @@ VALIDITY () {
     exit 0
 fi
 }
-IZIN=$(curl https://raw.githubusercontent.com/${GitUser}/allow1/main/ipvps.conf | awk '{print $5}' | grep $MYIP)
+IZIN=$(curl https://raw.githubusercontent.com/${GitUser}/izin/main/ipvps.conf | awk '{print $5}' | grep $MYIP)
 if [ $MYIP = $IZIN ]; then
 echo -e "\e[32mPermission Accepted...\e[0m"
 VALIDITY
@@ -86,9 +86,9 @@ status openvpn-tcp.log
 verb 3
 END
 cat > /etc/openvpn/client-tcp-$vpn.ovpn <<-END
-############## WELCOME TO PAKYAVPN ###############
-############## By PAKYAVPN ###############
-setenv FRIENDLY_NAME "PAKYAVPN TCP"
+############## MouseVpn ###############
+########### Premium script ############
+setenv FRIENDLY_NAME "MouseVpn TCP"
 client
 dev tun
 proto tcp
@@ -158,9 +158,9 @@ verb 3
 explicit-exit-notify
 END
 cat > /etc/openvpn/client-udp-$vpn.ovpn <<-END
-############## WELCOME TO PAKYAVPN ###############
-############## By PAKYAVPN ###############
-setenv FRIENDLY_NAME "PAKYAVPN UDP"
+############## MouseVpn ###############
+########### Premium script ############
+setenv FRIENDLY_NAME "MouseVpn UDP"
 client
 dev tun
 proto udp
@@ -200,8 +200,8 @@ if [[ -z $cek ]]; then
 rm -f /home/vps/public_html/client-tcp-ohp1194.ovpn
 rm -f /etc/systemd/system/ohp.service
 cat > /etc/openvpn/client-tcp-ohp1194.ovpn <<END
-############## WELCOME ###############
-############# BY PAKYAVPN  ##############
+############## MouseVpn ###############
+########### Premium script ############
 client
 dev tun
 proto tcp
@@ -218,7 +218,7 @@ auth-user-pass
 comp-lzo
 verb 3
 
-setenv FRIENDLY_NAME "PAKYAVPN OHP"
+setenv FRIENDLY_NAME "MouseVpn OHP"
 http-proxy $MYIP $vpn
 http-proxy-option CUSTOM-HEADER CONNECT HTTP/1.1
 http-proxy-option CUSTOM-HEADER Host bug.com
@@ -267,9 +267,9 @@ if [[ -z $cek ]]; then
 rm -f /etc/openvpn/client-tcp-ssl.ovpn
 rm -f /home/vps/public_html/client-tcp-ssl.ovpn
 cat > /etc/openvpn/client-tcp-ssl.ovpn <<-END
-############## WELCOME TO PAKYAVPN ###############
-############## BY PAKYAVPN ###############
-setenv FRIENDLY_NAME "PAKYAVPN SSL"
+############## MouseVpn ###############
+########### Premium script ############
+setenv FRIENDLY_NAME "MouseVpn SSL"
 client
 dev tun
 proto tcp
