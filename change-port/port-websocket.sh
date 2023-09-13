@@ -1,5 +1,5 @@
 #wget https://github.com/${GitUser}/
-GitUser="cakill26"
+GitUser="mousethain"
 #IZIN SCRIPT
 MYIP=$(curl -sS ipv4.icanhazip.com)
 echo -e "\e[32mloading...\e[0m"
@@ -7,7 +7,7 @@ clear
 # Valid Script
 VALIDITY () {
     today=`date -d "0 days" +"%Y-%m-%d"`
-    Exp1=$(curl https://raw.githubusercontent.com/${GitUser}/allow1/main/ipvps.conf | grep $MYIP | awk '{print $4}')
+    Exp1=$(curl https://raw.githubusercontent.com/${GitUser}/izin/main/ipvps.conf | grep $MYIP | awk '{print $4}')
     if [[ $today < $Exp1 ]]; then
     echo -e "\e[32mYOUR SCRIPT ACTIVE..\e[0m"
     else
@@ -16,7 +16,7 @@ VALIDITY () {
     exit 0
 fi
 }
-IZIN=$(curl https://raw.githubusercontent.com/${GitUser}/allow1/main/ipvps.conf | awk '{print $5}' | grep $MYIP)
+IZIN=$(curl https://raw.githubusercontent.com/${GitUser}/izin/main/ipvps.conf | awk '{print $5}' | grep $MYIP)
 if [ $MYIP = $IZIN ]; then
 echo -e "\e[32mPermission Accepted...\e[0m"
 VALIDITY
@@ -56,8 +56,8 @@ if [[ -z $cek ]]; then
 rm -f /etc/systemd/system/cdn-dropbear.service
 cat > /etc/systemd/system/cdn-dropbear.service <<END
 [Unit]
-Description=Python WS-Dropbear By PAKYAVPN 
-Documentation=https://pakya.xyz
+Description=Python WS-Dropbear By MouseVpn
+Documentation=https://mousevpn.site
 After=network.target nss-lookup.target
 
 [Service]
@@ -111,8 +111,8 @@ if [[ -z $cek ]]; then
 rm -f /etc/systemd/system/cdn-ovpn.service
 cat > /etc/systemd/system/cdn-ovpn.service <<END
 [Unit]
-Description=Python WS-Ovpn By PAKYAVPN 
-Documentation=https://pakya.xyz
+Description=Python WS-Ovpn By MouseVpn
+Documentation=https://mousevpn.site
 After=network.target nss-lookup.target
 
 [Service]
