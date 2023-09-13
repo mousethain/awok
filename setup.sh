@@ -65,9 +65,9 @@ clear
 # Valid Script
 VALIDITY() {
     today=$(date -d "0 days" +"%Y-%m-%d")
-    Exp1=$(curl https://raw.githubusercontent.com/${GitUser}/allow1/main/ipvps.conf | grep $MYIP | awk '{print $4}')
+    Exp1=$(curl https://raw.githubusercontent.com/${GitUser}/izin/main/ipvps.conf | grep $MYIP | awk '{print $4}')
     if [[ $today < $Exp1 ]]; then
-        echo -e "\e[32mTahniah! Anda Dibenarkan menggunakan AUTOSCRIPT PAKYAVPN..\e[0m"
+        echo -e "\e[32mPermission Accepted...\e[0m"
         sleep 5
     else
         echo -e "\e[31mYOUR SCRIPT HAS EXPIRED!\e[0m"
@@ -81,7 +81,7 @@ if [ $MYIP = $IZIN ]; then
     VALIDITY
 else
     echo -e "\e[31mPermission Denied!\e[0m"
-    echo -e "\e[31mPlease buy script first\e[0m"
+    echo -e "\e[31mpamito sek rek\e[0m"
     rm -f setup.sh
     exit 0
 fi
