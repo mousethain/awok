@@ -1,5 +1,5 @@
 #wget https://github.com/${GitUser}/
-GitUser="cakill26"
+GitUser="mousethain"
 # Color Validation
 Lred='\e[1;91m'
 Lgreen='\e[92m'
@@ -17,22 +17,33 @@ NC='\033[0;37m'
 echo ''
 clear
 echo ''
-echo -e "$RED         ██████╗░░█████╗░██╗░░██╗██╗░░░██╗░█████╗░ $NC"
-echo -e "$RED         ██╔══██╗██╔══██╗██║░██╔╝╚██╗░██╔╝██╔══██╗ $NC"
-echo -e "$RED         ██████╔╝███████║█████═╝░░╚████╔╝░███████║ $NC"
-echo -e "$RED         ██╔═══╝░██╔══██║██╔═██╗░░░╚██╔╝░░██╔══██║ $NC"
-echo -e "$RED         ██║░░░░░██║░░██║██║░╚██╗░░░██║░░░██║░░██║ $NC"
-echo -e "$RED         ╚═╝░░░░░╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝ $NC"
+ 
+echo -e "$RED         ███████████████████████████ $NC"
+echo -e "$RED         ███████▀▀▀░░░░░░░▀▀▀███████ $NC"
+echo -e "$RED         ████▀░░░░░░░░░░░░░░░░░▀████ $NC"
+echo -e "$RED         ███│░░░░░░░░░░░░░░░░░░░│███ $NC"
+echo -e "$RED         ██▌│░░░░░░░░░░░░░░░░░░░│▐██ $NC"
+echo -e "$RED         ██░└┐░░░░░░░░░░░░░░░░░┌┘░██ $NC"
+echo -e "$RED         ██░░└┐░░░░░░░░░░░░░░░┌┘░░██ $NC"
+echo -e "$RED         ██░░┌┘▄▄▄▄▄░░░░░▄▄▄▄▄└┐░░██ $NC"
+echo -e "$RED         ██▌░│██████▌░░░▐██████│░▐██ $NC"
+echo -e "$RED         ███░│▐███▀▀░░▄░░▀▀███▌│░███ $NC"
+echo -e "$RED         ██▀─┘░░░░░░░▐█▌░░░░░░░└─▀██ $NC"
+echo -e "$RED         ██▄░░░▄▄▄▓░░▀█▀░░▓▄▄▄░░░▄██ $NC"
+echo -e "$RED         ████▄─┘██▌░░░░░░░▐██└─▄████ $NC"
+echo -e "$RED         █████░░▐█─┬┬┬┬┬┬┬─█▌░░█████ $NC"
+echo -e "$RED         ████▌░░░▀┬┼┼┼┼┼┼┼┬▀░░░▐████ $NC"
+echo -e "$RED         █████▄░░░└┴┴┴┴┴┴┴┘░░░▄█████ $NC"
+echo -e "$RED         ███████▄░░░░░░░░░░░▄███████ $NC"
+echo -e "$RED         ██████████▄▄▄▄▄▄▄██████████ $NC"
+echo -e "$RED         ███████████████████████████ $NC"
 echo "                                                              "
-echo -e "$Lyellow                ⚡ PREMIUM SPEED SCRIPT ⚡"$NC
+echo -e "$Lyellow                😵‍💫 PREMIUM SPEED SCRIPT 😵‍💫"$NC
 echo -e "$green.........................................................."$NC
-echo -e "$Lyellow                  Autoscript By PAKYAVPN"$NC
-echo -e "$Lyellow                    CONTACT TELEGRAM"$NC
-echo -e "$Lyellow                       @anakjati567"$NC
-echo -e "$Lyellow                       @Back_Door_Trick"$NC
+echo -e "$Lyellow                  Autoscript By MouseVpn"$NC
 echo -e "$green.........................................................."$NC
 echo ''
-echo -e "$Lyellow                       Tunggu 6 Saat!"$NC
+echo -e "$Lyellow                       Tunggu 6 detik!"$NC
 echo -e "$green.........................................................."$NC
 sleep 6
 clear
