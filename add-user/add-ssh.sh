@@ -1,5 +1,5 @@
 #wget https://github.com/${GitUser}/
-GitUser="cakill26"
+GitUser="mousethain"
 
 # // IZIN SCRIPT
 export MYIP=$(curl -sS ipv4.icanhazip.com)
@@ -9,7 +9,7 @@ clear
 # // Valid Script
 VALIDITY () {
     today=`date -d "0 days" +"%Y-%m-%d"`
-    Exp1=$(curl -sS https://raw.githubusercontent.com/${GitUser}/allow1/main/ipvps.conf | grep $MYIP | awk '{print $4}')
+    Exp1=$(curl -sS https://raw.githubusercontent.com/${GitUser}/izin/main/ipvps.conf | grep $MYIP | awk '{print $4}')
     if [[ $today < $Exp1 ]]; then
     echo -e "\e[32mYOUR SCRIPT ACTIVE..\e[0m"
     else
@@ -18,7 +18,7 @@ VALIDITY () {
     exit 0
 fi
 }
-IZIN=$(curl -sS https://raw.githubusercontent.com/${GitUser}/allow1/main/ipvps.conf | awk '{print $5}' | grep $MYIP)
+IZIN=$(curl -sS https://raw.githubusercontent.com/${GitUser}/izin/main/ipvps.conf | awk '{print $5}' | grep $MYIP)
 if [ $MYIP = $IZIN ]; then
 echo -e "\e[32mPermission Accepted...\e[0m"
 VALIDITY
@@ -128,4 +128,4 @@ echo -e "PAYLOAD WS HTTPS     : GET wss://$sni/ HTTP/1.1[crlf]Host: sshws.$domai
 echo -e "\e[$line═══════════════════════════════════════════════════════\e[m"
 echo -e "PAYLOAD WS OVPN HTTP : GET wss://$sni/ HTTP/1.1[crlf]Host: sshws.$domain[crlf]Upgrade: websocket[crlf]Connection: Keep-Alive[crlf][crlf]"
 echo -e "\e[$line═══════════════════════════════════════════════════════\e[m"
-echo -e "Script By $creditt"
+echo -e "Script By MouseVpn"
