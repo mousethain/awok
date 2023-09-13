@@ -53,8 +53,8 @@ if [[ -z $cek ]]; then
 rm -f /etc/systemd/system/ohps.service
 cat > /etc/systemd/system/ohps.service <<END
 [Unit]
-Description=Direct Squid Proxy For open-ssh By PAKYAVPN 
-Documentation=https://t.me/anakjati567
+Description=Direct Squid Proxy For open-ssh By MouseVpn
+Documentation=
 Wants=network.target
 After=network.target
 
