@@ -209,7 +209,7 @@ echo "47m" > /etc/back
 echo "1;35m" > /etc/number
 echo 3d > /usr/bin/test
 # Version
-ver=$( curl https://raw.githubusercontent.com/${GitUser}/version/main/version.conf )
+ver=$( curl https://raw.githubusercontent.com/${GitUser}/awok/main/version.conf )
 history -c
 echo "$ver" > /home/ver
 clear
